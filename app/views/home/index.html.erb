@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filipacchi Foussard</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <img src="<%= asset_path 'logo.png' %>" alt="FF Logo">
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">BUY</a></li>
+        <li><a href="#">SELL</a></li>
+        <li><a href="#">PORTFOLIO</a></li>
+        <li><a href="#">GIVING BACK</a></li>
+        <li><a href="#">LET'S CONNECT</a></li>
+      </ul>
+    </nav>
+    <div class="burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+  <div class="header">
+    <div class="video-container">
+      <video class="video-background" autoplay loop muted>
+        <source src="<%= asset_path 'carlyle.mp4' %>" type="video/mp4">
+      </video>
+
+      <div class="video-text">
+        <h1>Filipacchi Foussard</h1>
+        <p>Expertise en Immobilier de Luxe à New York</p>
+        <a href="#" class="btn btn-primary">Prendre rendez-vous</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2>Meet Sophie</h2>
+    <p>...</p>
+    <img src="<%= asset_path 'sophie.jpg' %>" alt="Sophie Ravet">
+  </section>
+
+  <section id="featured-properties">
+    <h2>Featured Properties</h2>
+    <div class="property">
+      <h3>Property 1</h3>
+      <p>...</p>
+    </div>
+    <div class="property">
+      <h3>Property 2</h3>
+      <p>...</p>
+    </div>
+  </section>
+
+  <section id="news">
+    <h2>In The News</h2>
+    <article>
+      <h3>News Title 1</h3>
+      <p>...</p>
+    </article>
+    <article>
+      <h3>News Title 2</h3>
+      <p>...</p>
+    </article>
+  </section>
+
+  <section id="contact">
+    <h2>Work With Sophie</h2>
+    <p>...</p>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Sophie Ravet. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
